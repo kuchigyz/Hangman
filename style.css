@@ -76,7 +76,7 @@ html, body {
     font-size: 18px;
 }
 
-#guessed, #cheater{
+#guessed, #cheater, #guessedContainer{
     margin-left: 10px;
     margin-right: auto;
     font-size: 18px;

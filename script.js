@@ -17,7 +17,7 @@ function Play() {
     document.getElementById("HangedMan").src = "Stickman/Hangman_0.png";
     fails = 0;
     guessedLetters = "";
-    document.getElementById("guessed").innerText = "Guessed Letters: " + guessedLetters;
+    document.getElementById("guessed").innerText = guessedLetters;
     secretWord = dictionaryWords[Math.floor(Math.random() * dictionaryWords.length)].toUpperCase();
     displayedWord = "_".repeat(secretWord.length).split("");
     document.getElementById("secretWord").innerText = displayedWord.join(" ");
@@ -33,7 +33,7 @@ function Tap(button) {
         return;
     }
     guessedLetters += button.id;
-    document.getElementById("guessed").innerText = "Guessed Letters: " + guessedLetters;
+    document.getElementById("guessed").innerText = guessedLetters;
     foundALetter = 0;
     for (let i = 0; i < secretWord.length; i++) {
         if (secretWord[i] === button.id) {
