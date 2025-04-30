@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div id="hangman">
+            <img id="HangedMan" src="Stickman/Hangman_0.png" alt="Missing Asset">
+        </div>
+        <div id="secretWord"></div>
+        <div id="guessed"></div>
+        <div id="cheater" class="hidden"></div>
+        <div id="playerInput">
+            <div class="keyboard" id="row1">
+                <button id="Q" class="key" onclick="Tap(this)">Q</button>
+                <button id="W" class="key" onclick="Tap(this)">W</button>
+                <button id="E" class="key" onclick="Tap(this)">E</button>
+                <button id="R" class="key" onclick="Tap(this)">R</button>
+                <button id="T" class="key" onclick="Tap(this)">T</button>
+                <button id="Y" class="key" onclick="Tap(this)">Y</button>
+                <button id="U" class="key" onclick="Tap(this)">U</button>
+                <button id="I" class="key" onclick="Tap(this)">I</button>
+                <button id="O" class="key" onclick="Tap(this)">O</button>
+                <button id="P" class="key" onclick="Tap(this)">P</button>
+            </div>
+            <div class="keyboard" id="row2">
+                <button id="A" class="key" onclick="Tap(this)">A</button>
+                <button id="S" class="key" onclick="Tap(this)">S</button>
+                <button id="D" class="key" onclick="Tap(this)">D</button>
+                <button id="F" class="key" onclick="Tap(this)">F</button>
+                <button id="G" class="key" onclick="Tap(this)">G</button>
+                <button id="H" class="key" onclick="Tap(this)">H</button>
+                <button id="J" class="key" onclick="Tap(this)">J</button>
+                <button id="K" class="key" onclick="Tap(this)">K</button>
+                <button id="L" class="key" onclick="Tap(this)">L</button>
+            </div>
+            <div class="keyboard" id="row3">
+                <button id="Z" class="key" onclick="Tap(this)">Z</button>
+                <button id="X" class="key" onclick="Tap(this)">X</button>
+                <button id="C" class="key" onclick="Tap(this)">C</button>
+                <button id="V" class="key" onclick="Tap(this)">V</button>
+                <button id="B" class="key" onclick="Tap(this)">B</button>
+                <button id="N" class="key" onclick="Tap(this)">N</button>
+                <button id="M" class="key" onclick="Tap(this)">M</button>
+            </div>
+            <div class="keyboard" id="row4">
+                <button id="Play" class="key" onclick="Play()">Play Again</button>
+                <button id="toggleBtn" class="key" onclick="ToggleWord()">Show/Hide Word</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
